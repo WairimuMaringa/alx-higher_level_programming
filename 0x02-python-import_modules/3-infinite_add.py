@@ -2,9 +2,9 @@
 if __name__ == "__main__":
     import sys
     result = 0
-    args = len(sys.argv)
+    argmnts = sys.argv[0]
 
-    for x in range(1, args):
-        result += int(sys.argv[x])
-
-        print("{:d}".format(result))
+    for i in sys.argv:
+        if argmnts != i:
+            result += int(i)
+            print(result)
