@@ -3,8 +3,8 @@ if __name__ == "__main__":
     import sys
     import calculator_1 as calc
     len_args = len(sys.argv)
-    if len_args != 4:
-        print("Usage: {0} <a> <operator> <b>".format(sys.argv[0]))
+    if len_args != 3:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>".format(sys.argv[0]))
         exit(1)
         a = int(sys.argv[1])
         op = sys.argv[2]
