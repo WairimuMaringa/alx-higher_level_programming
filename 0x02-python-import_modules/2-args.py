@@ -14,5 +14,5 @@ if __name__ == "__main__":
             len_argv = 0
             for arg in sys.argv:
                 if len_argv != 0:
-                    print("{}: {}".format(i, arg))
-                    i += 1
+                    print("{}: {}".format(len_argv, arg))
+                    len_argv += 1
