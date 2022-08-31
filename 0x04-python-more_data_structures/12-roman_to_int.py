@@ -16,7 +16,7 @@ def roman_to_int(roman_string):
             }
     '''for ch in roman_string:'''
     s_length = len(roman_string)
-    for i in rnage(s_length):
+    for i in range(s_length):
         c = roman_string[i]
         if rom_n.get(c) is not None:
             if (i + 1) != s_length and rom_n[c] < rom_n[roman_string[i + 1]]:
