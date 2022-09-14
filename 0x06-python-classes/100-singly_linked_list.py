@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""Define node of singly linked list.
+"""
+
+
 class Node:
+    """Class Node
+    """
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -26,6 +32,11 @@ class Node:
 
 
 class SinglyLinkedList:
+    """Object SinglyLinkedList
+    """
+    def __init__(self):
+        self.__head = None
+
     def __str__(self):
         rtrn = ""
         ptr = self.__head
@@ -35,11 +46,7 @@ class SinglyLinkedList:
             if ptr.next_node is not None:
                 rtrn += "\n"
             ptr = ptr.next_node
-
         return (rtrn)
-
-    def __init__(self):
-        self.__head = None
 
     def sorted_insert(self, value):
         ptr = self.__head
