@@ -11,13 +11,15 @@ def isSafe(m_queen, nqueen):
             return False
     return True
 
+
 def print_result(m_queen, nqueen):
     res = []
 
     for i in range(nqueen):
         res.append([i, m_queen[i]])
 
-    print (res)
+    print(res)
+
 
 def Queen(m_queen, nqueen):
     if nqueen is len(m_queen):
@@ -34,10 +36,12 @@ def Queen(m_queen, nqueen):
             if nqueen is not len(m_queen):
                 Queen(m_queen, nqueen + 1)
 
+
 def solveNQueen(size):
     m_queen = [-1 for i in range(size)]
 
     Queen(m_queen, 0)
+
 
 if __name__ == '__main__':
 
@@ -49,7 +53,7 @@ if __name__ == '__main__':
 
     try:
         size = int(sys.argv[1])
-    except:
+    except Exception:
         print("N must be a number")
         sys.exit(1)
 
