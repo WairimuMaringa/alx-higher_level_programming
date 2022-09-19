@@ -23,7 +23,7 @@ class Rectangle:
                 drawn += ("#" * self.width) + "\n"
         return (drawn[:-1])
 
-    def __repr(self):
+    def __repr__(self):
         return ("Rectangle({:d}, {:d})".format(self.width, self.height))
 
     def __del__(self):
