@@ -4,14 +4,14 @@
 
 
 class MyList(list):
-    """Method: Inherit from list.
+    """Class: Inherit from list
 
     Args:
     list(list): the list
     """
 
     def print_sorted(self):
-        """Prints the list in a sorted (ascending) manner.
+        """Method: Prints the list in a sorted way(ascending sort).
         """
         list_sorted = self.copy()
         list_sorted.sort()
