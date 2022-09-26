@@ -40,6 +40,20 @@ Passing a boolean value
 	...
 	TypeError: name must be an integer
 
+Passing a float value
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", 1.5)
+	Traceback (most recent call last):
+	...
+	TypeError: name must be an integer
+
+Passing a set
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", {"hello", "world")
+	Traceback (most recent call last):
+	...
+	TypeError: name must be an integer
+
 Passing one argument to integer_validator
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("name")
