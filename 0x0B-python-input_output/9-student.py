@@ -3,7 +3,7 @@
 lastname and age."""
 
 
-class Student():
+class Student:
     """Class Student: defines a student.
     """
 
