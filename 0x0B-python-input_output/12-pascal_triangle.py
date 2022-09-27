@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-"""Function that returns a list of integers representing
-the Pascal triangle."""
+"""Function that returns a list of integers rep pascal triangle.
+"""
 
 
 def pascal_triangle(n):
+    """Method: create pascal's triangle.
+
+    Args:
+    n: number of integers of the triangle
+    """
     t_pascal = list()
     if n <= 0:
         return (t_pascal)
