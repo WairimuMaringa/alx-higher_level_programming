@@ -4,7 +4,7 @@ lastname and age."""
 
 
 class Student:
-    """Class Student: defines a student.
+    """Class Student: defines a student
     """
 
     def __init__(self, first_name, last_name, age):
@@ -22,4 +22,4 @@ class Student:
     def to_json(self):
         """Method: retrieve dictionary representation of student
         """
-        return (self.__dict__copy())
+        return self.__dict__copy()
