@@ -3,6 +3,6 @@ const myObject = {
 	type: 'object',
 	value: 12
 };
-console.log(my)bject);
+console.log(myObject);
 myObject.value = 89;
 console.log(myObject);
