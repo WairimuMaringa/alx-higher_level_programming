@@ -35,7 +35,7 @@ if __name__ == '__main__':
     FROM cities
     INNER JOIN states ON cities.state_id = states.id
     WHERE states.name = %(filter1)s;
-    ''', {'filter1': sys.argv[4]}
+    ''', {'filter1': sys.argv[4]})
 
     states = db_cursor.fetchall()
     print(", ".join([state[0] for state in states]))
