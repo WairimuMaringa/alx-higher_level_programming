@@ -34,7 +34,7 @@ def mysqlconnect(username, password, database, port=3306):
 if __name__ == '__main__':
     bd_session = mysqlconnect(sys.argv[1], sys.argv[2], sys.argv[3])
 
-    states = bd+session.query(State).order_by(State.id).all()
+    states = bd_session.query(State).order_by(State.id).all()
 
     for state in states:
         print("{}: {}".format(state.id, state.name))
