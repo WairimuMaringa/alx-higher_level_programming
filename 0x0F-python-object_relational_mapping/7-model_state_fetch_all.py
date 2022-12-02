@@ -21,7 +21,7 @@ def mysqlconnect(username, password, database, port=3306):
     connect to MySQL
     """
     engine = create_engine(
-            'mysql+mysqldb://{}:{}@localhost/{}'.format(
+            'mysql+mysqldb://{}:{}@localhost:{}/{}'.format(
                 username,
                 password,
                 port,
