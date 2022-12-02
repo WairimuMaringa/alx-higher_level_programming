@@ -4,6 +4,7 @@ List all state objects from a database.
 """
 import sys
 from model_state import Base, State
+from model_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -37,7 +38,7 @@ if __name__ == '__main__':
     items = bd_session.query(
             State,
             City
-            ).filter(State.id == City.stae_id).all()
+            ).filter(State.id == City.state_id).all()
 
     for state, city in items:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
