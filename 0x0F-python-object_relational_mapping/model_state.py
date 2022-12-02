@@ -3,7 +3,7 @@
 Class:
     a) State.
 """
-from sqlchemy import Column, Integer, String, MetaData
+from sqlachemy import Column, Integer, String, MetaData
 from sqlachemy.ext.declarative import declarative_base
 
 mymetadata = MetaData()
