@@ -34,7 +34,7 @@ if __name__ == '__main__':
     db_cursor.execute(query)
 
     states = db_cursor.fetchall()
-    for states in states:
+    for state in states:
         print(state)
 
     db_cursor.close()
