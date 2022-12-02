@@ -5,7 +5,7 @@ Link class to table in the database
 import sys
 from model_state import Base, State
 
-from sqlachemy import (create_engine)
+from sqlalchemy import (create_engine)
 
 if __name__ == "__main__":
     engine = create_engine(
