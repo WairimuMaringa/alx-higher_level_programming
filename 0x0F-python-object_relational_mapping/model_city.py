@@ -5,7 +5,7 @@ Class:
 """
 from sqlalchemy import Column, Integer, String, Foreignkey
 from sqlalchemy.ext.declarative import declarative_base
-from relationship_state import Base
+from model_state import Base
 
 
 class City(Base):
