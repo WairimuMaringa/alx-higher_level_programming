@@ -1,3 +1,3 @@
-#!/bin bash
-# Script showng content-length froma http request
-curl -sI "$1" | grep "Content-Length:" | cut -d " " -f 2
+#!/bin/bash
+# Script showing content length from a http request
+curl -sI "${1}" | grep "Content-Length:" | cut -d " " -f2
